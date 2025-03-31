@@ -1,68 +1,58 @@
 # Jogo JokenPo
 
-Este é um aplicativo simples de **JokenPo** (Pedra, Papel, Tesoura) desenvolvido utilizando o framework Flutter. O aplicativo permite que o usuário jogue contra o computador, que escolhe uma opção aleatória. O resultado do jogo é exibido diretamente na interface.
+Este é um aplicativo simples de JokenPo (Pedra, Papel, Tesoura) desenvolvido usando o framework Flutter. O aplicativo permite que o usuário jogue contra o computador, que escolhe uma opção aleatória. O resultado do jogo é exibido na interface de forma clara e direta.
 
 ## Funcionalidades
-
-- O usuário pode escolher entre **Pedra**, **Papel** ou **Tesoura**.
+- O usuário pode escolher entre as opções: Pedra, Papel ou Tesoura.
 - O aplicativo gera uma escolha aleatória para o computador.
-- O resultado é exibido em uma mensagem (você venceu, você perdeu, ou empate).
-- Imagens representando as escolhas do usuário e do aplicativo são exibidas.
+- O resultado do jogo é exibido em uma mensagem, informando se o usuário venceu, perdeu ou empatou.
+- Imagens das escolhas feitas pelo usuário e pelo computador são exibidas.
 
 ## Como Jogar
-
 1. Ao abrir o aplicativo, o usuário verá a opção "Escolha uma opção abaixo".
-2. O usuário pode escolher entre **Pedra**, **Papel** ou **Tesoura**, clicando nas respectivas imagens.
-3. O aplicativo exibirá a escolha do computador e a mensagem sobre o resultado do jogo (se venceu, perdeu ou empatou).
+2. O usuário pode clicar nas imagens de Pedra, Papel ou Tesoura para fazer sua escolha.
+3. O aplicativo irá gerar uma escolha aleatória para o computador e mostrar o resultado do jogo (você venceu, você perdeu ou empatou).
 
 ## Tecnologias Utilizadas
-
-- **Flutter**: Framework de desenvolvimento para apps móveis.
+- **Flutter**: Framework de desenvolvimento para aplicativos móveis.
 - **Dart**: Linguagem de programação utilizada no Flutter.
-- **Random**: Para gerar a escolha aleatória do computador.
+- **Random**: Pacote utilizado para gerar a escolha aleatória do computador.
 
 ## Estrutura do Código
+O código é composto por um StatefulWidget chamado **Jogo**, onde o estado das escolhas do usuário e do computador é mantido e atualizado com base nas interações.
 
-O código consiste na criação de um **StatefulWidget** chamado `Jogo`, onde o estado da escolha do usuário e do aplicativo é mantido e atualizado com base nas interações do usuário.
-
-### Funções principais:
-
-- **_jogar(String escolhaUsuario)**: Recebe a escolha do usuário, gera uma escolha aleatória para o computador, compara as escolhas e atualiza o resultado.
-- **build()**: Método de construção da interface gráfica, contendo a visualização das imagens de escolha e a exibição do resultado.
+Principais funções:
+- `_jogar(String escolhaUsuario)`: Recebe a escolha do usuário, gera a escolha aleatória do computador, compara as opções e atualiza o resultado.
+- `build()`: Método de construção da interface gráfica, exibindo as imagens de escolha e o resultado.
 
 ## Imagens Utilizadas
+As imagens correspondentes às opções Pedra, Papel e Tesoura são usadas para representar as escolhas feitas pelo usuário e pelo computador. Estas imagens devem estar na pasta `images` no diretório do projeto.
 
-As imagens dos itens **Pedra**, **Papel**, e **Tesoura** são utilizadas para representar as escolhas do usuário e do aplicativo. Essas imagens devem estar na pasta `images` dentro do diretório do projeto.
 
-### Estrutura de Pastas:
 
-images/
-
-  - pedra.png
-
-  - papel.png
-
-  - tesoura.png
-
-  - padrao.png
-
-lib/
-
-  - main.dart (onde o código do aplicativo está implementado)
 
 ## Como Executar
+1. **Instalar o Flutter**: Siga as instruções no [guia oficial de instalação do Flutter](https://flutter.dev/docs/get-started/install).
+2. **Clonar o Repositório**: Clone o repositório com o seguinte comando:
+   ```bash
+   git clone https://github.com/FelipePucci-afk/Jogo-JokenPo.git
 
-1. **Instalar o Flutter**:
-   Siga o guia oficial para instalar o Flutter em seu ambiente: [Flutter Installation](https://flutter.dev/docs/get-started/install).
-
-2. **Clonar o Repositório**:
-   Clone o repositório para o seu computador:
-     git clone https://github.com/FelipeBattarra/app-jokenpo.git
+3. **Instalar Dependências**:
+   ```bash
+   cd app-jokenpo
    
-3. **Instalar Dependências**: Navegue até o diretório do projeto e instale as dependências:
-    cd app-jokenpo
-    flutter pub get
+   flutter pub get
 
-4. **Executar o Aplicativo**: Conecte um dispositivo físico ou use um emulador e execute o aplicativo:
-    flutter run
+4. **Executar o Aplicativo**:
+   ```bash
+   flutter run
+
+  ##Vídeo de Demonstração: 
+  
+
+https://github.com/user-attachments/assets/ddf286dc-60a3-4f0d-90ed-155594a45d2c
+
+
+
+
 
